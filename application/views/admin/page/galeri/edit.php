@@ -31,6 +31,12 @@
                 </div>
               </div>
               <div class="row mb-3">
+                <label for="" class="col-sm-2 col-form-label">Deskripsi</label>
+                <div class="col-sm-10">
+                  <textarea name="deskripsi" id="editor1"><?= $galeri['deskripsi']; ?></textarea>
+                </div>
+              </div>
+              <div class="row mb-3">
                 <label for="" class="col-sm-2 col-form-label">Foto</label>
                 <div class="col-sm-10">
                   <input type="file" name="gambar" value="<?= $galeri['gambar']; ?>" class="form-control" id="gambar">

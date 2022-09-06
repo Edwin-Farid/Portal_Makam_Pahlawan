@@ -34,7 +34,10 @@ class Admin extends CI_Controller
 
 			redirect(base_url("ADashboard"));
 		} else {
-			echo "Username dan password salah !";
+			echo '<script language="javascript">';
+			echo 'alert("Kata sandi atau username salah!!")';
+			echo '</script>';
+			$this->load->view('admin/page/login');
 		}
 	}
 	function logout()

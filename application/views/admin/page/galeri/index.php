@@ -25,6 +25,12 @@
                 </div>
               </div>
               <div class="row mb-3">
+                <label for="" class="col-sm-2 col-form-label">Deskripsi</label>
+                <div class="col-sm-10">
+                  <textarea name="deskripsi" id="editor1"></textarea>
+                </div>
+              </div>
+              <div class="row mb-3">
                 <label for="" class="col-sm-2 col-form-label">Gambar</label>
                 <div class="col-sm-10">
                   <input type="file" name="gambar" class="form-control" id="">
@@ -52,6 +58,7 @@
                 <tr>
                   <th scope="col">#</th>
                   <th scope="col">Judul</th>
+                  <th scope="col">Deskripsi</th>
                   <th scope="col">Gambar</th>
                   <th scope="col">Aksi</th>
                 </tr>
@@ -63,6 +70,7 @@
                   <tr>
                     <td><?= $no++ ?></td>
                     <td><?= $row['judul']; ?></td>
+                    <td><?= $row['deskripsi'] ?></td>
                     <td><img src="<?= base_url() ?>upload/galeri/<?php echo $row['gambar'];  ?>" width="100px" alt=""></td>
                     <td>
                       <a href="<?= base_url() ?>Galeri/edit_form/<?= $row['id']; ?>"><i class="bi bi-pencil-square"></i></a>

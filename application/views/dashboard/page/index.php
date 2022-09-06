@@ -42,11 +42,5 @@
         </div>
     </section>
 
-    <?php $this->load->view('dashboard/page/tentang'); ?>
-
-    <?php $this->load->view('dashboard/page/galeri'); ?>
-
-    <?php $this->load->view('dashboard/page/jasa'); ?>
-
     <?php $this->load->view('dashboard/page/lokasi'); ?>
 </main>

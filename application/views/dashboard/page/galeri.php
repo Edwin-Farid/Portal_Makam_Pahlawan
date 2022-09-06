@@ -8,7 +8,7 @@
             <?php foreach ($galeri as $row) : ?>
                 <div class="col-lg-3 col-md-6 align-items-stretch">
                     <div class="card d-flex align-items-center border-0 bg-transparent shadow-none">
-                        <img class="img-fluid mb-3" style="width:250px;height:280px;" src="<?= base_url() ?>upload/galeri/<?= $row['gambar']; ?>" alt="<?= $row['gambar']; ?>" />
+                        <a href="<?= base_url() ?>Dashboard/detail/<?= $row['id']; ?>"><img class="img-fluid mb-3" style="width:250px;height:280px;" src="<?= base_url() ?>upload/galeri/<?= $row['gambar']; ?>" alt="<?= $row['gambar']; ?>" /></a>
                     </div>
                 </div>
             <?php endforeach; ?>

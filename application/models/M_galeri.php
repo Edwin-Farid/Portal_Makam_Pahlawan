@@ -12,6 +12,7 @@ class M_galeri extends CI_Model
 	{
 		$data = [
 			"judul" => $this->input->post('judul', true),
+			"deskripsi" => $this->input->post('deskripsi', true),
 			"gambar" => $this->upload->data('file_name')
 		];
 
@@ -32,6 +33,7 @@ class M_galeri extends CI_Model
 	{
 		$data = [
 			"judul" => $this->input->post('judul', true),
+			"deskripsi" => $this->input->post('deskripsi', true),
 		];
 		if (@$_FILES['gambar']['name'] != null) {
 			$data['gambar'] = $this->upload->data('file_name');

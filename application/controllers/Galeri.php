@@ -23,6 +23,7 @@ class Galeri extends CI_Controller
 	public function add_form()
 	{
 		$this->form_validation->set_rules('judul', 'Judul', 'required');
+		$this->form_validation->set_rules('deskripsi', 'Deskripsi', 'required');
 
 		if ($this->form_validation->run() == false) {
 			redirect('Galeri');
@@ -55,6 +56,7 @@ class Galeri extends CI_Controller
 		$data['galeri'] = $this->M_galeri->get_form_galeri($id);
 
 		$this->form_validation->set_rules('judul', 'Judul', 'required');
+		$this->form_validation->set_rules('deskripsi', 'Deskripsi', 'required');
 
 		if ($this->form_validation->run() == false) {
 			$this->load->view('admin/page/galeri/edit', $data);
